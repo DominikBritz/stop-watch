@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stopwatch</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>⏱️ Stopwatch</h1>
+        </div>
+
+        <div class="input-section">
+            <label for="timeInput">Set Time:</label>
+            <input type="text" id="timeInput" placeholder="00:05:00" value="00:05:00" pattern="[0-9]{2}:[0-9]{2}:[0-9]{2}">
+        </div>
+
+        <div class="mode-section">
+            <label class="radio-label">
+                <input type="radio" name="mode" value="up" id="modeUp">
+                <span>Count Up</span>
+            </label>
+            <label class="radio-label">
+                <input type="radio" name="mode" value="down" id="modeDown" checked>
+                <span>Count Down</span>
+            </label>
+        </div>
+
+        <div class="timer-container">
+            <div class="timer-display" id="timerDisplay">00:00:00</div>
+            <div class="hover-controls" id="hoverControls">
+                <button class="control-btn pause-btn" id="pauseBtn" title="Pause">⏸</button>
+                <button class="control-btn reset-btn" id="resetBtn" title="Reset">↻</button>
+            </div>
+        </div>
+
+        <div class="start-section">
+            <button class="start-btn" id="startBtn">Start</button>
+        </div>
+
+        <div class="settings-section">
+            <h3>⚙️ Settings</h3>
+            <label class="checkbox-label">
+                <input type="checkbox" id="notificationToggle">
+                <span>Enable notifications</span>
+            </label>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>

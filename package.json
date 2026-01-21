@@ -1,0 +1,14 @@
+{
+  "name": "stopwatch",
+  "version": "0.1.0",
+  "description": "A minimal stopwatch application",
+  "scripts": {
+    "tauri": "tauri",
+    "dev": "tauri dev",
+    "build": "tauri build"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "@tauri-apps/cli": "^2.1.0"
+  }
+}

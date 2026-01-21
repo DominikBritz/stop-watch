@@ -1,0 +1,17 @@
+{
+  "$schema": "../gen/schemas/desktop-schema.json",
+  "identifier": "default",
+  "description": "Default capabilities for the stopwatch app",
+  "windows": ["main"],
+  "permissions": [
+    "core:default",
+    "core:window:allow-set-decorations",
+    "core:window:allow-set-size",
+    "core:window:allow-center",
+    "notification:default",
+    "notification:allow-is-permission-granted",
+    "notification:allow-request-permission",
+    "notification:allow-notify",
+    "notification:allow-show"
+  ]
+}
