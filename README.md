@@ -118,4 +118,4 @@ To add custom icons for your application:
 
 ## License
 
-MIT
+Apache-2.0 license 
